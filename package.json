@@ -1,0 +1,16 @@
+{
+  "name": "transtasmanracing-v1",
+  "version": "1.0.0",
+  "description": "Landing Page for Trans Tasman Racing",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "EightySeven Creative 2019",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sal.js": "^0.6.1",
+    "sass": "^1.43.4"
+  }
+}

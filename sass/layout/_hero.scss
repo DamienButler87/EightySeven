@@ -1,0 +1,142 @@
+.hero {
+  
+	&__mainh {
+		position: relative;
+		height: 100vh;
+		background-image: 
+		linear-gradient(
+			to right bottom,
+			rgba($color-primary-dark, 0.9), 
+			rgba($color-primary-dark, 0.9) 
+			/*rgba($color-primary, 0.60)*/), 
+			url(../img/hero/twocars.jpg);
+			background-size: cover;
+			background-position: center;
+			z-index: 1;
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); 
+			clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); 
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+
+			@include respond(tab-land) {
+        -webkit-clip-path: none;
+			}
+	}
+
+	&__thestory {
+    position: relative;
+    height: 50vh;
+    background-image: 
+      linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary, 0.60)), 
+    url(../../img/backgrounds/thestory-bg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		@include respond(tab-land) {
+			-webkit-clip-path: none;
+		}
+  }
+  
+  &__discord {
+    position: relative;
+    height: 50vh;
+    background-image: 
+      linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary, 0.60)), 
+    url(../../img/hero/discord.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		@include respond(tab-land) {
+			-webkit-clip-path: none;
+		}
+  }
+	
+	&__theteam {
+    position: relative;
+    height: 50vh;
+    background-image: 
+      linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary, 0.60)), 
+    url(../../img/backgrounds/theteam.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		@include respond(tab-land) {
+			-webkit-clip-path: none;
+		}
+  }
+	
+	&__madisondown {
+    position: relative;
+    height: 50vh;
+    background-image: 
+      linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary, 0.60)), 
+    url(../../img/hero/madison-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		@include respond(tab-land) {
+			-webkit-clip-path: none;
+		}
+  }
+
+  &__richardhamstead {
+    position: relative;
+    height: 50vh;
+    background-image: 
+      linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary-dark, 0.85), 
+        rgba($color-primary, 0.60)), 
+    url(../../img/hero/richard-hamstead.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%); 
+    backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		@include respond(tab-land) {
+			-webkit-clip-path: none;
+		}
+  }
+}
+
+

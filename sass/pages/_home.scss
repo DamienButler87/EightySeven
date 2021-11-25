@@ -1,0 +1,33 @@
+.main-content {
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: 
+		linear-gradient(
+			to right bottom,
+			rgba($color-primary-dark, 0.85), 
+			rgba($color-primary-dark, 0.85)), 
+  url(../../img/backgrounds/get-in-touch.jpg);
+  background-position: bottom;
+
+  &__content {
+    @include absCenter;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: 3rem;
+    color: $color-white;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

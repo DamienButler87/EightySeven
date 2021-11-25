@@ -1,0 +1,17 @@
+.red-btn {
+  position: relative;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  margin-top: 3rem;
+  padding: 2rem;
+  transition: all .2s;
+  cursor: pointer;
+  z-index: 1500;
+  
+
+  &:hover {
+    background-color: $color-primary-2;
+  }
+}
+

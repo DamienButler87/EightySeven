@@ -1,0 +1,159 @@
+.desktop-main {
+  padding-bottom: 2rem;
+  
+  @include respond(tab-land) {
+    display: none;
+  }
+
+  &__element {
+    width: 100%;
+    position: relative;
+    height: 600px;
+
+    @include respond(big-desktop) {
+      height: 700px;
+    }
+    
+    
+    p {
+      width: 100%;
+      font-size: 1.4rem;
+      color: $color-white;
+    }
+  
+    &--wrapper {
+      width: 100%;
+      padding: 1rem 5px 0;
+      margin-top: 8rem;
+      z-index: 1;
+    }
+  }
+  
+  .background-overlay-1 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 50rem;
+    background-color: $color-main-bgoverlay;
+    z-index: -1;
+    //border-bottom: 2px solid red;
+  
+    @include respond(tab-land) {
+      display: none;
+    }
+
+    @include respond(big-desktop) {
+      height: 45rem;
+      top: 5rem;
+    }
+  }
+  
+  .background-overlay-2 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 50rem;
+    background-color: $color-main-bgoverlay;
+    z-index: -1;
+    //border-bottom: 2px solid red;
+  
+    @include respond(tab-land) {
+      display: none;
+    }
+  
+    @include respond(big-desktop) {
+      height: 45rem;
+      top: 5rem;
+    }
+  }
+
+  .background-overlay-3 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 50rem;
+    background-color: $color-main-bgoverlay;
+    z-index: -1;
+    //border-bottom: 2px solid red;
+  
+    @include respond(tab-land) {
+      display: none;
+    }
+  
+    @include respond(big-desktop) {
+      height: 45rem;
+      top: 5rem;
+    }
+  }
+  
+  .desk-img {
+    position: relative;
+    width: 100%;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+
+    /*&__left {
+      border-bottom: 2px solid red;
+      border-left: 2px solid red;
+    }
+
+    &__right {
+      border-bottom: 2px solid red;
+      border-right: 2px solid red;
+    }*/
+  }
+  
+  
+}
+
+.mobile-main {
+  display: none;
+  padding: 10rem 0; 
+
+  @include respond(tab-land) {
+    display: block;
+  }
+
+  .row {
+    @include respond(tab-port) {
+      padding: 5rem;
+    }
+  }
+
+  .wrapper {
+    background-color: $color-main-bgoverlay;
+    transition: all .2s;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $color-primary;
+      transition: all .2s;
+    }
+
+    &:hover span {
+      color: $color-primary-dark;
+    }
+    img {
+      width: 100%;
+    }
+  
+    p {
+      color: $color-white;
+      padding: 2rem;
+      font-size: 1.4rem;
+    }
+
+    span {
+      color: $color-primary;
+    }
+
+  }
+  
+  
+
+}

@@ -1,0 +1,36 @@
+.theteam {
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+
+  
+
+  &__driver {
+    width: 100%;
+    text-align: center;
+    background-color: $color-main-bgoverlay;
+    cursor: pointer;
+    transition: all .2s;
+
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    @include respond(tab-land) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @include respond(tab-land) {
+      clip-path: none;  
+    }
+
+    &:hover {
+      background-color: $color-primary;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  background-color: $color-primary-dark;
+  padding: 25px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  &__link {
+    color: $color-primary;
+    transition: all .5s;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+
+  p {
+    color: $color-white;
+  }
+
+  
+}

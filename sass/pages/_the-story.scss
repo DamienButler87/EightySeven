@@ -1,0 +1,18 @@
+.thestory {
+  margin: 5rem 0;
+
+  img {
+    width: 100%;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    @include respond(tab-land) {
+      clip-path: none;
+    }
+  }
+
+  &__center {
+    padding: 4.0rem 0;
+  }
+}

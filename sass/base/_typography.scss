@@ -1,0 +1,294 @@
+/*
+** TYPOGRAPHY
+*/
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	/*font-size: 16px;*/
+	line-height: 1.7;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	color: $color-white;
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 1.2rem;
+}
+
+.hero {
+	&__text {
+		@include absCenterHero;
+		
+
+		@include respond(phone) {
+			width: 80%;
+		}
+
+		h1 {
+			margin-top: -2.5rem;
+			font-size: 4rem;
+			color: $color-white;
+			animation-name: moveInBottom;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			
+
+			@include respond(phone) {
+				margin-top: -1rem;
+				font-size: 3rem;
+			}
+
+			span {
+				color: $color-primary;
+			}
+		}
+
+		h2 {
+			font-size: 2rem;
+			animation-name: moveInLeft;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			
+
+			@include respond(phone) {
+				font-size: 2rem;
+			}
+		}
+
+		h3 {
+			margin-top: -2rem;
+			margin-left: 2px;
+			color: $color-white;
+			animation-name: moveInBottom;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			font-weight: 200;
+			animation-delay: 1s;
+			animation-fill-mode: both;
+			text-align: right;
+
+			@include respond(phone) {
+				margin-top: -1rem;
+				text-align: left;
+			}
+		}
+
+	}
+
+	&__page-text {
+		@include absCenter;
+		
+
+		@include respond(phone) {
+			width: 80%;
+		}
+
+		h1 {
+			margin-top: -3.5rem;
+			font-size: 6rem;
+			color: $color-white;
+			animation-name: moveInBottom;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			
+
+			@include respond(phone) {
+				text-align: center;
+				margin-top: -3rem;
+				font-size: 5rem;
+			}
+
+			span {
+				color: $color-primary;
+			}
+		}
+
+		h2 {
+			text-align: center;
+			font-size: 2rem;
+			animation-name: moveInLeft;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			
+
+			@include respond(phone) {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+
+.heading-main {
+
+	&__left {
+		margin-top: -4.5rem;
+		font-weight: 500;
+		color: $color-primary;
+		font-size: 8rem;
+		
+		@include respond(tab-land) {
+			margin-top: -5rem;
+     text-align: center;
+    }
+	}
+
+	&__right {
+		text-align: right;
+		margin-top: -4.5rem;
+		font-weight: 500;
+		color: $color-primary;
+		font-size: 8rem;
+		
+		@include respond(tab-land) {
+			margin-top: -5rem;
+     text-align: center;
+    }
+	}
+}
+
+.heading-secondary {
+	&__left {
+		text-align: left;
+		color: $color-white;
+		font-size: 2rem;
+		letter-spacing: 3px;
+
+		span {
+			color: $color-primary;
+		}
+
+		@include respond(tab-land) {
+			text-align: center;
+			color: $color-white;
+		 }
+	}
+
+	&__right {
+		text-align: right;
+		color: $color-white;
+		font-size: 2rem;
+		letter-spacing: 3px;
+
+		span {
+			color: $color-primary;
+		}
+
+		@include respond(tab-land) {
+			text-align: center;
+			color: $color-white;
+		 }
+	}
+}
+
+.mobile-main__heading {
+	font-size: 2.4rem;
+	padding: 2rem 0;
+	color: $color-white;
+}
+
+.thestory {
+	&__heading {
+		color: $color-white;
+		font-size: 3rem;
+		padding-bottom: 2rem;
+
+		@include respond(tab-land) {
+      text-align: center;
+    }
+
+		span {
+			color: $color-primary;
+		}
+	}
+
+	p {
+		color: $color-white;
+		font-size: 1.4rem;		
+		
+		@include respond(tab-land) {
+      padding: 2rem;
+      text-align: center;
+    }
+	}
+}
+
+
+.theteam {
+	
+	&__driver {
+		color: $color-white;
+		font-size: 2rem;
+		padding: 2rem 0;
+		
+		&--name {
+			margin-left: 3rem;
+			padding-bottom: 2rem;
+
+			@include respond(tab-land) {
+				margin-left: 0;
+			}
+
+			span {
+				color: $color-primary;
+			}
+		}
+
+		&--role {
+			font-size: 1.4rem;
+			padding: 2rem 0;
+			margin-right: 3rem;
+
+			@include respond(tab-land) {
+				margin-right: 0;
+			}
+	
+				span {
+					color: $color-primary;
+				}
+		}
+
+		&--car {
+			color: $color-primary;
+			margin-right: 3rem;
+
+			@include respond(tab-land) {
+				margin-right: 0;
+			}
+
+			span {
+				color: $color-white;
+			}
+		}
+
+		p {
+			font-size: 1.4rem;
+		}
+
+		&:hover &--name {
+			span {
+				color: $color-black
+			}
+		}
+
+		&:hover &--role {
+			span {
+				color: $color-black;
+			}
+		}
+
+		&:hover &--car {
+			color: $color-black;
+		}
+		
+	}
+}
+
+.red {
+	color: $color-primary;
+}
